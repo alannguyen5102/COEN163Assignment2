@@ -44,27 +44,10 @@ a:hover:not(.active) {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  nav a:not(:first-child) {display: none;}
-  nav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav.responsive {position: relative;}
-  nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
+#map{
+  width:400px;
+  height:400px;
+  background:white;
 }
 
 .active {
@@ -109,4 +92,27 @@ h3.subhead {
 }
 .lightGrey {
     background-color: rgb(128,128,128);
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
 }
