@@ -10,7 +10,7 @@ div.pictures
 div.page-header
 {
     height: 100px;
-    
+
 }
 #bot {background-color: gray;}
 .page-header {background-color: white;}
@@ -20,7 +20,7 @@ h1
 
 }
 
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,11 +28,8 @@ ul {
     background-color: rgb(34, 49, 63);
 }
 
-li {
-    float: left;
-}
-
 li a {
+    float: left;
     display: block;
     color: white;
     text-align: center;
