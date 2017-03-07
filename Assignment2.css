@@ -20,15 +20,12 @@ h1
 
 }
 
-ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.topnav {
     overflow: hidden;
     background-color: rgb(34, 49, 63);
 }
 
-li a {
+a {
     float: left;
     display: block;
     color: white;
@@ -37,8 +34,35 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+a:hover:not(.active) {
     background-color: #111;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
 }
 
 .active {
