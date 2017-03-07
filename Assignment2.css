@@ -1,4 +1,6 @@
-div.container {background-color: #2980b9;}
+div.container 
+{background-color: #2980b9;
+padding-bottom:3%;}
 div.pictures
 {
     float: right;
