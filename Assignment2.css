@@ -1,9 +1,22 @@
-*   {
-    font-family: 'Raleway', sans-serif;
-    }
+*{
+	font-family:'Raleway', sans-serif;
+}
 div.container 
 {background-color: rgb(160,238,255);
-padding-bottom:3%;}
+margin-bottom:10px;
+}
+
+#divpad{
+	padding-bottom:3%;
+}
+
+#clearcolor{
+	background-color:white;
+}
+
+#clearpadleft{
+	padding-left:0;
+}
 div.pictures
 {
     float: right;
@@ -40,7 +53,8 @@ a {
 }
 
 a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(160,238,255);
+	color:rgb(34, 49, 63);
 }
 
 .icon {
@@ -54,7 +68,8 @@ a:hover:not(.active) {
 }
 
 .active {
-    background-color: #2980b9;
+    background-color: rgb(160,238,255);
+	color:rgb(34, 49, 63);
 }
 
 h2.subhead {
