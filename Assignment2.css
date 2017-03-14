@@ -237,11 +237,13 @@ li a:hover, .dropdown:hover .dropbtn {
   }
 
 	ul.topnav li a.active{
+		display:none;
 		color:white;
 		background-color: rgb(34, 49, 63);
 	}
 
 	ul.bnav li a.active{
+		display: none;
 		color:white;
 		background-color: rgb(34, 49, 63);
 	}
