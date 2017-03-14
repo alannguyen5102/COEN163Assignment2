@@ -1,7 +1,7 @@
 *{
 	font-family:'Raleway', sans-serif;
 }
-div.container 
+div.container
 {background-color: rgb(160,238,255);
 margin-bottom:10px;
 }
@@ -16,6 +16,10 @@ margin-bottom:10px;
 
 #clearcolor{
 	background-color:white;
+}
+
+#navcolor{
+	background-color: rgb(34, 49, 63);
 }
 
 #clearpadleft{
@@ -38,29 +42,8 @@ h1
 	font-size:300%;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: rgb(34, 49, 63);
-}
-
-a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width:10em;
-}
-
-a:hover:not(.active) {
-    background-color: #D8E0E2;
-	color:rgb(34, 49, 63);
-}
-
-.icon {
-  width:3em;
-  display: none;
+#titlecolor{
+	color: rgb(34, 49, 63);
 }
 
 #map{
@@ -72,11 +55,6 @@ a:hover:not(.active) {
 img{
 	width:100%;
 	height:100%;
-}
-
-.active {
-    background-color: rgb(160,238,255);
-	color:rgb(34, 49, 63);
 }
 
 h2.subhead {
@@ -121,33 +99,168 @@ span{
 	color:red;
 }
 
-@media screen and (max-width: 768px) {
-  nav a:not(:first-child) {display: none;}
-  nav a {text-align:left;
-	width:92%;	
-	}
-  nav a.icon {
-    float: right;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+	background-color: rgb(34, 49, 63);
+	float: left;}
+
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width:10em;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #D8E0E2;
+	color:rgb(34, 49, 63);
+}
+
+ul.topnav li a.active {
+	background-color: rgb(160,238,255);
+	color:rgb(34, 49, 63);
+}
+
+ul.topnav li.right {
+	width:3em;
+	display:none;
+}
+
+ul.bnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.bnav li {
+	background-color: rgb(34, 49, 63);
+	float: left;}
+
+ul.bnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width:10em;
+}
+
+ul.bnav li a:hover:not(.active) {
+	background-color: #D8E0E2;
+	color:rgb(34, 49, 63);
+}
+
+ul.bnav li a.active {
+	background-color: rgb(160,238,255);
+	color:rgb(34, 49, 63);
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #D8E0E2;
+		color:rgb(34, 49, 63)
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+		background-color: rgb(34, 49, 63);
+    width: 10em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-	
-  }
+    text-align: left;
+		z-index: 999;
+}
+
+.dropdown-content a:hover {background-color: #D8E0E2;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#currentpage{
+	color:white;
+	display:none;
 }
 
 @media screen and (max-width: 768px) {
-  nav.responsive {position: relative;}
-  nav.responsive .icon {
+	#currentpage{
+		display:inline-block;
+		padding-top:14px;
+		padding-left: 16px;
+	}
+	ul.topnav li {display: none;}
+	ul.topnav li {
+	width: 92%;
+	}
+
+	ul.topnav li a{
+    text-align: left;
+		width:100%;
+  }
+
+	ul.topnav li a.active{
+		color:white;
+		background-color: rgb(34, 49, 63);
+	}
+
+	ul.bnav li a.active{
+		color:white;
+		background-color: rgb(34, 49, 63);
+	}
+
+	ul.topnav li.right{
+		display: block;
+		float: right;
+	}
+	ul.topnav li a.icon {
+		text-align: center;
+		float: right;
+		width:100%;
+	}
+	.dropdown-content {
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive li.right {
     position: absolute;
     right: 0;
     top: 0;
     float:right;
   }
-  nav.responsive a {
+  .topnav.responsive li{
     float: none;
     display: block;
     text-align: left;
     width:92%;
   }
-		nav a.icon {
+
+	.topnav.responsive li a{
+    text-align: left;
+    width:100%;
+  }
+
+	ul.topnav li.right {
     width:8%;
 }
 	#title{

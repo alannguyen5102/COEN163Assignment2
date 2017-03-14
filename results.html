@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="Assignment2.css"/> 
+  <link rel="stylesheet" type="text/css" href="Assignment2.css"/>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <script src="Assignment2.js"></script>
@@ -15,44 +15,52 @@
 
 
 <section>
-<div class="container" id="clearcolor"> 
+<div class="container" id="clearcolor">
 <div class="row">
   <div class="page-header">
 
-    <h1 id="title">Pilot Rock Bike Pit</h1>
+    <a id="titlecolor" href ="Assignment2.html" ><h1 id="title">Pilot Rock Bike Pit</h1></a>
     <p id="comment">Welcome to the Bike Pit!</p>
 
   </div>
   </div>
   </div>
 
-<div class="container">
-<div class="row">
-<nav class="topnav" id="myTopnav">
-	  <a href="Assignment2.html">Home</a>
-	  <a href="photogallery.html">Photos</a>
-	  <a href="forms.html">Forms</a>
-	  <a href="rules.html">Rules</a>
-	  <a href="mudbogs.html">Mud Bogs</a>
-	  <a class="active" href="results.html">Racing Results</a>
-	  <a href="sponsors.html">Sponsors</a>
-	  <a href="contact.html">Contact Us</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</nav>
-</div>
-</div>
+  <div class="container" id="navcolor">
+  <div class="row">
+    <ul class="topnav" id="myTopnav">
+        <p id="currentpage">Racing Results</p>
+    	  <li><a href="Assignment2.html">Home</a></li>
+    	  <li><a href="photogallery.html">Photos</a></li>
+    	  <li><a href="rules.html">Rules</a></li>
+    	  <li><a href="mudbogs.html">Mud Bogs</a></li>
+    	  <li><a class="active" href="results.html">Racing Results</a></li>
+    	  <li><a href="sponsors.html">Sponsors</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Forms</a>
+          <div class="dropdown-content">
+            <a href="forms.html">Volunteer Form</a>
+            <a href="#parent">Parental Consent Form</a>
+            <a href="#time">Time Sheet Form</a>
+            <a href="#racer">Racer Registration Form</a>
+          </div>
+        </li>
+        <li class="right"><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+    </ul>
+  </div>
+  </div>
 <div class="container" id="divpad">
 <h1>Racing Results</h1>
 <div class="row">
-    
+
 	<div class="col-sm-6">
-	
+
       <h3>2016 RACE SERIES</h3>
-<h4>50cc 7-8yrs Big Track Total Pts.</h4>  
-<ol>                                                                                                          
+<h4>50cc 7-8yrs Big Track Total Pts.</h4>
+<ol>
 <li>Aubrey Mills  </li>                                                                   50
 <li>Kyler Birdsell</li>                                                                    44
-<li>Trysten  Burns</li>                                                               20                                                                                                                  
+<li>Trysten  Burns</li>                                                               20
 </ol>
 <h4>65 cc Beginner:</h4>
 <ol>
@@ -92,6 +100,15 @@
 </div>
 </div>
 </div>
+
+<div class="container" id="navcolor">
+<div class="row">
+  <ul class="bnav" id="myTopnav">
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+
 </section>
 
 </body>
