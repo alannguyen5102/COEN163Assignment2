@@ -1,6 +1,7 @@
-*{
-	font-family:'Raleway', sans-serif;
+body{
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
+
 div.container
 {background-color: rgb(160,238,255);
 margin-bottom:10px;
@@ -45,6 +46,10 @@ h1
 #titlecolor{
 	color: rgb(34, 49, 63);
 	text-decoration: none;
+}
+
+.italic{
+	font-style: italic;
 }
 
 #map{
@@ -201,6 +206,15 @@ li a:hover, .dropdown:hover .dropbtn {
 	display:none;
 }
 
+.footword{
+	color:white;
+	display:inline-block;
+	float:right;
+	padding-right: 16px;
+	padding-top:16px;
+	font-size: 11px;
+}
+
 @media screen and (max-width: 768px) {
 	#currentpage{
 		display:inline-block;
@@ -213,6 +227,11 @@ li a:hover, .dropdown:hover .dropbtn {
 	}
 
 	ul.topnav li a{
+    text-align: left;
+		width:100%;
+  }
+
+	ul.bnav li a{
     text-align: left;
 		width:100%;
   }
