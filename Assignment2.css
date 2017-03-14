@@ -258,6 +258,7 @@ li a:hover, .dropdown:hover .dropbtn {
 		width:100%;
 	}
 	.dropdown-content {
+			text-align: center;
 	    width: 100%;
 	}
 }
@@ -284,6 +285,10 @@ li a:hover, .dropdown:hover .dropbtn {
 
 	ul.topnav li.right {
     width:8%;
+}
+.dropdown-content {
+		text-indent: 50px;
+		width: 100%;
 }
 	#title{
 	padding-left:15px;
