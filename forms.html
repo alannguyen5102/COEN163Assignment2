@@ -53,32 +53,33 @@
 <h1>Volunteer Form</h1>
 <div class="row">
     <div class="col-sm-4">
-	<h5><span>* required field </span></h5>
+	<p><span>* required field </span></p>
 	<form>
-	First name:<span>*</span><br>
-	  <input type="text" name="firstname" required>
+	<label for="fname">First name:<span>*</span></label><br>
+	  <input type="text" name="firstname" id="fname" required>
 	  <br><br>
-	Last name:<span>*</span><br>
-	  <input type="text" name="lastname" required>
+	<label for="lname">Last name:<span>*</span></label><br>
+	  <input type="text" name="lastname" id="lname" required>
 	  <br><br>
-	Phone:<span>*</span><br>
-	  <input type="text" name="phone" required>
+	<label for="phone">Phone:<span>*</span></label><br>
+	  <input type="text" name="phone" id="phone" required>
 	  <br><br>
-	Email:<span>*</span><br>
-	  <input type="text" name="email" required>
+	<label for="email">Email:<span>*</span></label><br>
+	  <input type="text" name="email" id="email" required>
 	  <br>
-	  <input type="checkbox" name="updates"> I want to receive email updates<br><br>
-	Date Worked:<span>*</span><br>
-	  <input type="date" name="workdate" required>
+	  <input type="checkbox" name="updates" id="updates" >
+	  <label for="updates">I want to receive email updates</label><br><br>
+	<label for="workdate">Date Worked:<span>*</span></label><br>
+	  <input type="date" name="workdate" id="workdate" required>
 	  <br><br>
-	Number of Hours worked:<span>*</span><br>
-	  <input type="text" name="hours" required>
+	<label for="hours">Number of Hours worked:<span>*</span></label><br>
+	  <input type="text" name="hours" id="hours" required>
 	  <br><br>
-	Description of work performed:<span>*</span><br>
-	  <textarea name="work" row="10" cols ="30" required></textarea>
+	<label for="work">Description of work performed:<span>*</span></label><br>
+	  <textarea name="work" row="10" cols ="30" id="work" required></textarea>
 	  <br><br>
-	Equipment Used:<br>
-	  <textarea name="work" row="10" cols ="30"></textarea>
+	<label for="equip">Equipment Used:</label><br>
+	  <textarea name="equip" row="10" cols ="30" id="equip" ></textarea>
 	  <br><br>
 	  <input type="submit" value="Submit"><br><br>
 	</form>
